@@ -1,0 +1,23 @@
+[
+    {
+        "name": "ipinfo-ip-api",
+        "desc": "ipinfo",
+        "method": "POST",
+        "url": "http://ip-api.com/json/`content`?lang=zh-CN",
+        "header": {
+            "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.125 Safari/537.36"
+        },
+        "data": "",
+        "response_regx": ".*"
+    },{
+        "name": "ipinfo-taobao",
+        "desc": "ipinfo taobao",
+        "method": "POST",
+        "url": "http://ip.taobao.com/service/getIpInfo.php?ip=`content`",
+        "header": {
+            "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.125 Safari/537.36"
+        },
+        "data": "",
+        "response_regx": ".*"
+    }
+]

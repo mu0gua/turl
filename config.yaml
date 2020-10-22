@@ -1,0 +1,11 @@
+debug:
+  address: false
+logger:
+  filepath: ./log/
+  prefix: false
+plugin: ./plugin/
+proxy:
+  address: socks5://127.0.0.1:10808
+  status: false
+savepath: ./result/
+timeout: 15
