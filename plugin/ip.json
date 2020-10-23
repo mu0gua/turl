@@ -11,7 +11,7 @@
         "response_regx": ".*"
     },{
         "name": "ipinfo-taobao",
-        "desc": "ipinfo taobao",
+        "desc": "ipinfo taobao nedd publicKey",
         "method": "POST",
         "url": "http://ip.taobao.com/service/getIpInfo.php?ip=`content`",
         "header": {

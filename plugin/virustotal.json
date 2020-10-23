@@ -7,17 +7,17 @@
     }, {
         "name": "virustotal-domain",
         "desc": "virustotal domain query",
-        "method": "POST",
+        "method": "GET",
         "url": "https://www.virustotal.com/vtapi/v2/domain/report?apikey=x&domain=`content`"
     }, {
         "name": "virustotal-file",
         "desc": "virustotal file query",
-        "method": "POST",
+        "method": "GET",
         "url": "https://www.virustotal.com/vtapi/v2/file/report?apikey=x&resource=`content`&allinfo=true"
     }, {
         "name": "virustotal-file",
         "desc": "virustotal file query",
-        "method": "POST",
+        "method": "GET",
         "url": "https://www.virustotal.com/ui/files/`content`/behaviours"
     }
 ]
