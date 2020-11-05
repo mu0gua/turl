@@ -1,8 +1,9 @@
+# ipinfo-history need api key
 [
     {
         "name": "ipinfo-ip-api",
         "desc": "ipinfo",
-        "method": "POST",
+        "method": "GET",
         "url": "http://ip-api.com/json/`content`?lang=zh-CN",
         "header": {
             "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.125 Safari/537.36"
@@ -11,9 +12,29 @@
         "response_regx": ".*"
     },{
         "name": "ipinfo-taobao",
-        "desc": "ipinfo taobao nedd publicKey",
-        "method": "POST",
+        "desc": "ipinfo taobao need publicKey",
+        "method": "GET",
         "url": "http://ip.taobao.com/service/getIpInfo.php?ip=`content`",
+        "header": {
+            "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.125 Safari/537.36"
+        },
+        "data": "",
+        "response_regx": ".*"
+    },{
+        "name": "ipinfo-ipstack",
+        "desc": "ipinfo ipstack need publicKey",
+        "method": "GET",
+        "url": "http://api.IPstack.com/`content`?access_key=x",
+        "header": {
+            "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.125 Safari/537.36"
+        },
+        "data": "",
+        "response_regx": ".*"
+    },{
+        "name": "ipinfo-history",
+        "desc": "ipinfo history",
+        "method": "GET",
+        "url": "https://api.antitor.com/history/peer/?ip=`content`&key=x",
         "header": {
             "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.125 Safari/537.36"
         },

@@ -1,0 +1,8 @@
+[
+    {
+        "name": "dnsdumper",
+        "desc": "dnsdumper - images",
+        "method": "GET",
+        "url": "https://dnsdumpster.com/static/map/`content`.png"
+    }
+]

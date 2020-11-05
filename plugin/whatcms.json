@@ -1,0 +1,8 @@
+[
+    {
+        "name": "whatcms",
+        "desc": "whatcms",
+        "method": "GET",
+        "url": "https://whatcms.org/APIEndpoint/Detect?key=xxx&url=`content`"
+    }
+]

@@ -1,0 +1,9 @@
+# need api key
+[
+    {
+        "name": "hunter-mail",
+        "desc": "hunter-mail",
+        "method": "GET",
+        "url": "https://api.hunter.io/v2/domain-search?domain=`content`&api_key=x"
+    }
+]

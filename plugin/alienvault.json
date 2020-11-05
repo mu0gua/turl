@@ -1,0 +1,36 @@
+#ip section
+#general: General information about the IP, such as geo data, and a list of the other sections currently available for this IP address.
+#reputation: OTX data on malicious activity observed by AlienVault Labs (IP Reputation).
+#geo:        A more verbose listing of geographic data (Country code, coordinates, etc.)
+#malware: Malware samples analyzed by AlienVault Labs which have been observed connecting to this IP address.
+#url_list: URLs analyzed by AlienVault Labs which point to or are somehow associated with this IP address.
+#passive_dns: passive dns information about hostnames/domains observed by AlienVault Labs pointing to this IP address.
+#http_scans: Meta data for http(s) connections to the IP.
+
+#domain section
+#general: General information about the domain, including any pulses, and a list of the other sections currently available for this domain.
+#geo: A more verbose listing of geographic data (Country code, coordinates, etc.)
+#malware: Malware samples analyzed by AlienVault Labs which have been observed connecting to this domain.
+#url_list: URLs analyzed by AlienVault Labs on this domain.
+#passive_dns: Passive dns records observed by AlienVault Labs pointing to this domain.
+#whois: Whois records for the domain.
+#http_scans: Meta data for http(s) connections to the domain.
+
+[
+    {
+        "name": "alienvault-ipv4",
+        "desc": "alienvault ipv4 query",
+        "method": "GET",
+        "url": "https://otx.alienvault.com/api/v1/indicators/IPv4/`content`/general"
+    }, {
+        "name": "alienvault-ipv6",
+        "desc": "alienvault ipv6 query",
+        "method": "GET",
+        "url": "https://otx.alienvault.com/api/v1/indicators/IPv6/`content`/general"
+    }, {
+        "name": "alienvault-domain",
+        "desc": "alienvault domain query",
+        "method": "GET",
+        "url": "https://otx.alienvault.com/api/v1/indicators/domain/`content`/general"
+    }
+]

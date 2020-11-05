@@ -1,0 +1,17 @@
+#UID = "aa"
+#SECRET = "x"
+
+[
+    {
+        "name": "censys",
+        "desc": "censys query",
+        "method": "POST",
+        "url": "https://www.censys.io/api/v1/search/ipv4",
+        "header": {
+            "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.125 Safari/537.36",
+            "Content-Type": "application/json",
+            "Authorization": "Basic xxxx"
+        },
+        "data": "{\"query\": \"`content`\", \"page\": 1, \"fields\": [\"ip\", \"updated_at\", \"protocols\", \"autonomous_system.name\", \"autonomous_system.asn\", \"autonomous_system.routed_prefix\", \"location.city\", \"location.country\", \"location.longitude\", \"location.latitude\"], \"flatten\": true}"
+    }
+]

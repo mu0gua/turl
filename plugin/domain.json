@@ -1,0 +1,8 @@
+[
+    {
+        "name": "aliyun-domain-whois",
+        "desc": "aliyun-domain-whois",
+        "method": "GET",
+        "url": "https://v1.alapi.cn/api/whois?domain=`content`"
+    }
+]

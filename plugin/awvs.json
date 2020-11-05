@@ -1,0 +1,32 @@
+[
+    {
+        "name": "awvs-task",
+        "desc": "Acunetix Scan add task ",
+        "method": "POST",
+        "url": "https://127.0.0.1:3443/api/v1/targets",
+        "header": {
+            "X-Auth": "api_key",
+            "content-type": "application/json"
+        },
+        "data": "{'address':'`content`','description':'`content scan for turl`','criticality':'10'}"
+    },{
+        "name": "awvs-start",
+        "desc": "Acunetix task start",
+        "method": "POST",
+        "url": "https://127.0.0.1:3443/api/v1/scans",
+        "header": {
+            "X-Auth": "api_key",
+            "content-type": "application/json"
+        },
+        "data": "{'target_id': '`content`','profile_id':{'full': '11111111-1111-1111-1111-111111111111', 'highrisk': '11111111-1111-1111-1111-111111111112','XSS': '11111111-1111-1111-1111-111111111116', 'SQL': '11111111-1111-1111-1111-111111111113', 'Weakpass': '11111111-1111-1111-1111-111111111115', 'crawlonly': '11111111-1111-1111-1111-111111111117'},'schedule':{'disable':False,'start_date':None, 'time_sensitive':False}}"
+    },{
+        "name": "awvs-delete",
+        "desc": "Acunetix task delete",
+        "method": "GET",
+        "url": "api/v1/targets?c=`content`",
+        "header": {
+            "X-Auth": "api_key",
+            "content-type": "application/json"
+        }
+    }
+]

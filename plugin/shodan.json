@@ -1,0 +1,14 @@
+# need api key
+[
+    {
+        "name": "shodan-honey",
+        "desc": "shodan-honey",
+        "method": "GET",
+        "url": "https://api.shodan.io/labs/honeyscore/`content`?key=x"
+    },{
+        "name": "shodan-search",
+        "desc": "shodan-search",
+        "method": "GET",
+        "url": "https://api.shodan.io/shodan/host/search?key=x&query=`content`"
+    }
+]

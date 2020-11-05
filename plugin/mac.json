@@ -1,0 +1,8 @@
+[
+    {
+        "name": "mac-macvendors",
+        "desc": "mac macvendors",
+        "method": "GET",
+        "url": "https://macvendors.co/api/`content`"
+    }
+]

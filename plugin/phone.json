@@ -1,0 +1,8 @@
+[
+    {
+        "name": "hunter-phone",
+        "desc": "hunter-phone",
+        "method": "GET",
+        "url": "http://apilayer.net/api/validate?access_key=x&number=`content`"
+    }
+]

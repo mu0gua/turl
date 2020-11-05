@@ -1,0 +1,22 @@
+# need email and api key
+# 需要手动base64
+
+#((protocol="redis" && banner="redis_version"))&& after="2020"
+# turl -m fofa -q KChwcm90b2NvbD0icmVkaXMiICYmIGJhbm5lcj0icmVkaXNfdmVyc2lvbiIpKSYmIGFmdGVyPSIyMDIwIg==
+
+# fofa all fields: ip,port,country,host,title,domain,province,country_name,header,server,protocol,banner,as_number,as_organization,latitude,longitude,isp,city
+
+
+[
+    {
+        "name": "fofa",
+        "desc": "fofa query",
+        "method": "GET",
+        "url": "https://fofa.so/api/v1/search/all?email=xxxxxx&key=xxx&page=1&size=9999&full=false&fields=ip,port,country,host,title,domain,province,country_name,header,server,protocol,banner,as_number,as_organization,latitude,longitude,isp,city&qbase64=`content`",
+        "header": {
+            "content-type": "application/json;charset=UTF-8"
+        },
+        "data": "",
+        "response_regx": "*"
+    }
+]
